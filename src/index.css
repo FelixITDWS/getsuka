@@ -1,0 +1,36 @@
+/* 設定網頁的基本樣式 */
+body {
+  font-family: 'SetoFont', 'Noto Serif TC', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(); /* 指定背景圖片 */
+}
+
+/* 背景透明層，覆蓋全高度 */
+#bg-opacity {
+  background-color: #ffffffa0;
+  min-height: 100vh;
+}
+
+/* 頂部導航欄樣式 */
+#out-tab {
+  background-color: bisque;
+  position: relative;
+  padding: 3px 1vw;
+}
+
+/* 主要內容區塊樣式 */
+#board {
+  padding: 50px;
+  margin: 10px;
+  background-color: bisque;
+  border-radius: 5rem;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* 增加 dropdown 按鈕之間的間距 */
+.d-flex .dropdown + .dropdown {
+  margin-left: 10px; /* 設定左右間距為 10px，可根據需求調整 */
+}
