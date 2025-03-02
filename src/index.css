@@ -15,7 +15,7 @@ body {
 
 /* 頂部導航欄樣式 */
 #out-tab {
-  background-color: bisque;
+  background-color: rgb(255, 229, 203);
   position: relative;
   padding: 3px 1vw;
 }
@@ -24,7 +24,7 @@ body {
 #board {
   padding: 50px;
   margin: 10px;
-  background-color: bisque;
+  background-color: rgb(255, 229, 203);
   border-radius: 5rem;
   font-size: 36px;
   text-align: center;
