@@ -1,6 +1,6 @@
 import './Logo.scss';
 
-import getsuka from '../../../assets/images/getsuka.png';
+import getsuka from '../../../assets/getsuka-logo.png';
 
 function Logo() {
 
