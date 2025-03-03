@@ -1,0 +1,40 @@
+h1::before {
+    content: 'Getsuka 玥華';
+    position: absolute;
+    z-index: -1;
+    -webkit-text-stroke: 5px #fd5939;
+  }
+  
+  h1:hover::before {
+    z-index: -1;
+    -webkit-text-stroke: 5px #FFFF;
+  }
+  
+  h1:focus::before {
+    z-index: -1;
+    -webkit-text-stroke: 5px #FFFF;
+  }
+  
+  .logo:hover {
+    transition: all 0.3s linear;
+    h1 {
+      color: #fd5939;
+    }
+    h1::before {
+      z-index: -1;
+      -webkit-text-stroke: 5px #FFFF;
+    }
+  }
+  
+  .logo:focus {
+    transition: all 0.3s linear;
+  
+    h1 {
+      color: #fd5939;
+    }
+  
+    h1::before {
+      z-index: -1;
+      -webkit-text-stroke: 5px #FFFF;
+    }
+  }
