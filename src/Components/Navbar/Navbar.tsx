@@ -7,7 +7,6 @@ import hambar from "/src/assets/hambar.svg"
 import hambarFocus from "/src/assets/hambar-focus.svg"
 
 function Navbar() {
-//   const [clickedIdx, setClickedIdx] = useState<number>(15);
   const navBarLinks = useRef<HTMLDivElement>(null);
   const [isFocus, setIsFocus] = useState<boolean>(false);
 

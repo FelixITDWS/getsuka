@@ -63,17 +63,16 @@ function App() {
     }
   }, [appSize, setAppSize]);
 
-  // Navbar animation
-  useEffect(() => {
-    animateNavbar(navbar.current, { opacity: [0, 1] }, { ease: "easeInOut", duration: 1.5, delay: appSize === "Mobile" || appSize === "Tablet" ? 2.5 : 4.5 });
-  }, [animateNavbar, appSize, navbar]);
-  {
-    return (
-      <div className="App">
+  
+  return (
+    <div>
+      <div
+        ref={navbar}
+        className="fixed z-[100]">
         <Navbar />
-      </div>
-    );
-  }
+      </div> 
+    </div>
+  );
 
 }
 
