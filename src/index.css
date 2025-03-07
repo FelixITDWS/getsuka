@@ -1,36 +1,36 @@
-/* 設定網頁的基本樣式 */
+@layer base {
+  @font-face {
+    font-family: GenJyuuGothic;
+    font-weight: 700;
+    src: url(/src/fonts/GenJyuuGothic-Bold_.ttf);
+  }
+  .font-outline-3 {
+    -webkit-text-stroke: 3px #fb5a38;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'SetoFont', 'Noto Serif TC', sans-serif;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url(); /* 指定背景圖片 */
+  font-family: GenJyuuGothic, sans-serif;
 }
 
-/* 背景透明層，覆蓋全高度 */
-#bg-opacity {
-  background-color: #ffffffa0;
-  min-height: 100vh;
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* 頂部導航欄樣式 */
-#out-tab {
-  background-color: rgb(255, 229, 203);
-  position: relative;
-  padding: 3px 1vw;
+::-webkit-scrollbar-thumb {
+  background-color: #fb5a38;
+  border-radius: 10px;
 }
 
-/* 主要內容區塊樣式 */
-#board {
-  padding: 50px;
-  margin: 10px;
-  background-color: rgb(255, 229, 203);
-  border-radius: 5rem;
-  font-size: 36px;
-  text-align: center;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #634700;
 }
 
-/* 增加 dropdown 按鈕之間的間距 */
-.d-flex .dropdown + .dropdown {
-  margin-left: 10px; /* 設定左右間距為 10px，可根據需求調整 */
+::-webkit-scrollbar-track {
+  background-color: #fff;
 }

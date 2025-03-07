@@ -1,3 +1,46 @@
 body {
-    background-color: #fb5a38;
+    background-color: #f2c17f;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#banner {
+    margin-top: 120px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#banner img{
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+#intro {
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    #intro {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #intro {
+        margin-bottom: 100px;
+    }
+}
+
+.intro-container {
+    margin-bottom: 30px;
 }
