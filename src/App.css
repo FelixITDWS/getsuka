@@ -1,6 +1,5 @@
 body {
-    background-color: #f2c17f;
-    margin: 0;
+    background-color: rgba(242,217,180,0.5);
     padding: 0;
     overflow-x: hidden;
 }
@@ -23,22 +22,6 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
-}
-
-#intro {
-    margin-bottom: 48px;
-}
-
-@media (min-width: 768px) {
-    #intro {
-        margin-bottom: 80px;
-    }
-}
-
-@media (min-width: 1024px) {
-    #intro {
-        margin-bottom: 100px;
-    }
 }
 
 .intro-container {
