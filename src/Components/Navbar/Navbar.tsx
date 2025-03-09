@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <nav className="navbar">
           <div className="logo-container">
-            <a href="/">
+            <a href="#">
               <img src={getsukaLogo} alt="Getsuka Logo" />
             </a>
           </div>
@@ -19,6 +19,9 @@ function Navbar() {
             <div ref={navBarLinks} className="nav-links hidden-links">
               <div className="nav-item">
                 <NavbarLink text="介紹" link="#intro" />
+              </div>
+              <div className="nav-item">
+                <NavbarLink text="相關人物" link="#member" />
               </div>
               <div className="nav-item">
                 <NavbarLink text="社群連結" link="#media" />
