@@ -3,7 +3,8 @@ import './App.css'
 import Navbar from './Components/Navbar';
 import Title from './Components/Title';
 import Vtuber from './Pages/Vtuber';
-import Character from './Pages/Character';
+import Fan from './Pages/Fan';
+// import Character from './Pages/Character';
 import Media from './Pages/Media';
 
 
@@ -28,7 +29,12 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="member">
+      <section id="fan">
+        <div className='fan-container'>
+          <Fan />
+        </div>
+      </section>
+      {/* <section id="member">
         <div className='member-container'>
           <div>
             <Title text='相關人物' />
@@ -37,7 +43,7 @@ function App() {
             <Character />
           </div>
         </div>
-      </section>
+      </section> */}
       <section id="media">
         <div>
           <Title text='社群連結' />

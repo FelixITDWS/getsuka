@@ -5,6 +5,8 @@ import x from '../../assets/x.svg'
 import discord from '../../assets/discord.svg'
 import twitch from '../../assets/twitch.svg'
 import instagram from '../../assets/instagram.svg'
+import bluesky from '../../assets/bluesky.svg'
+import marshmallow from '../../assets/marshmallow.svg'
 
 function Media() {
     return(
@@ -39,6 +41,18 @@ function Media() {
                         <a href='https://www.instagram.com/getsukav' target='_blank'>
                             <img src={instagram} alt='instagram' />
                             <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://bsky.app/profile/getsukav.bsky.social' target='_blank'>
+                            <img src={bluesky} alt='Bluesky' />
+                            <span>Bluesky</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://marshmallow-qa.com/lpv3ne9k9eh0ssh' target='_blank'>
+                            <img src={marshmallow} alt='棉花糖' />
+                            <span>棉花糖</span>
                         </a>
                     </li>
                 </ul>
