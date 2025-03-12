@@ -20,9 +20,9 @@ function Navbar() {
               <div className="nav-item">
                 <NavbarLink text="介紹" link="#intro" />
               </div>
-              {/* <div className="nav-item">
+              <div className="nav-item">
                 <NavbarLink text="相關人物" link="#member" />
-              </div> */}
+              </div>
               <div className="nav-item">
                 <NavbarLink text="社群連結" link="#media" />
               </div>

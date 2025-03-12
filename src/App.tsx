@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Title from './Components/Title';
 import Vtuber from './Pages/Vtuber';
 import Fan from './Pages/Fan';
-// import Character from './Pages/Character';
+import Character from './Pages/Character';
 import Media from './Pages/Media';
 
 
@@ -34,7 +34,7 @@ function App() {
           <Fan />
         </div>
       </section>
-      {/* <section id="member">
+      <section id="member">
         <div className='member-container'>
           <div>
             <Title text='相關人物' />
@@ -43,7 +43,7 @@ function App() {
             <Character />
           </div>
         </div>
-      </section> */}
+      </section>
       <section id="media">
         <div>
           <Title text='社群連結' />
