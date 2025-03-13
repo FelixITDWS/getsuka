@@ -9,6 +9,8 @@ import Media from './Pages/Media';
 
 
 import getsukaSetup from './assets/getsuka-setup.jpg'
+import getsukaStar from './assets/getsuka-star.png'
+import getsukaHappy from './assets/getsuka-happy.png'
 
 function App() {
   return(
@@ -24,6 +26,7 @@ function App() {
           <div>
             <Title text='介紹' />
           </div>
+          <Media />
           <div>
             <Vtuber />
           </div>
@@ -44,21 +47,19 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="media">
-        <div>
-          <Title text='社群連結' />
-        </div>
-        <div>
-          <Media />
-        </div>
-      </section>
       <section id="more-info">
         <div>
           <Title text='更多資訊' />
         </div>
         <div className='more-info-container'>
-          <a href='https://docs.google.com/spreadsheets/d/1sOmeablnN8j1IdqmpXhtWDvST33AsAzPbziVyU6fGj4/edit?usp=drivesdk' target='_blank'>更多資訊</a>
-          <a href='https://gestuka.fandom.com/' target='_blank'>Wiki</a>
+          <a href='https://docs.google.com/spreadsheets/d/1sOmeablnN8j1IdqmpXhtWDvST33AsAzPbziVyU6fGj4/edit?usp=drivesdk' target='_blank'>
+            <img src={getsukaHappy} alt="更多資訊" />
+            <p>玥華小檔案</p>
+          </a>
+          <a href='https://gestuka.fandom.com/' target='_blank'>
+            <img src={getsukaStar} alt="Wiki" />
+            <p>Wiki</p>
+          </a>
         </div>
       </section>
     </div>

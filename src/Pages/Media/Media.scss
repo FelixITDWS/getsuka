@@ -3,8 +3,8 @@
         list-style: none;
         padding: 0;
         display: flex;
-        justify-content: space-around;
-        gap: 10px;
+        justify-content: center;
+        gap: 4rem;
         margin-top: 2rem;;
     }
 
@@ -16,7 +16,7 @@
     }
 
     img {
-        width: 80px;
+        width: 2rem;
         transition: transform 0.3s ease;
     }
 
@@ -27,7 +27,7 @@
     span {
         visibility: hidden;
         font-size: 12px;
-        width: 80px;
+        width: 5rem;
         background-color: rgb(255, 229, 203);
         color: #000;
         text-align: center;
@@ -37,7 +37,7 @@
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
-        top: 70%;
+        top: 2rem;
         margin-top: 10px;
         transition: visibility 0.3s ease, transform 0.3s ease;
     }
