@@ -52,6 +52,15 @@ function App() {
           <Media />
         </div>
       </section>
+      <section id="more-info">
+        <div>
+          <Title text='更多資訊' />
+        </div>
+        <div className='more-info-container'>
+          <a href='https://docs.google.com/spreadsheets/d/1sOmeablnN8j1IdqmpXhtWDvST33AsAzPbziVyU6fGj4/edit?usp=drivesdk' target='_blank'>更多資訊</a>
+          <a href='https://gestuka.fandom.com/' target='_blank'>Wiki</a>
+        </div>
+      </section>
     </div>
   );
 }

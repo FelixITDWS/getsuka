@@ -1,6 +1,7 @@
 import './Getsuka.scss'
 
 // import getsukaCharacter from '../../assets/getsuka.jpg'
+import getsukaHi from '../../assets/getsuka-hi.png'
 
 function Getsuka() {
     return(
@@ -14,6 +15,7 @@ function Getsuka() {
       <div className="container profile-container">
         <div className="profile-content">
           <div className="profile-subtitle">
+            <img src={getsukaHi} alt="hi" />
             <h3>玥華です！</h3>
           </div>
           <ul className="profile-text">

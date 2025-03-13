@@ -31,3 +31,9 @@ body {
 .member-container {
     margin-bottom: 30px;
 }
+
+.more-info-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}

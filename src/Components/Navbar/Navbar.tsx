@@ -26,6 +26,9 @@ function Navbar() {
               <div className="nav-item">
                 <NavbarLink text="社群連結" link="#media" />
               </div>
+              <div className="nav-item">
+                <NavbarLink text="更多資訊" link="#more-info" />
+              </div>
             </div>
           </div>
         </nav>
