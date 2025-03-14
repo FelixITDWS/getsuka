@@ -6,6 +6,7 @@ import Vtuber from './Pages/Vtuber';
 import Fan from './Pages/Fan';
 import Character from './Pages/Character';
 import Media from './Pages/Media';
+import Footer from './Components/Footer'
 
 
 import getsukaSetup from './assets/getsuka-setup.jpg'
@@ -62,6 +63,7 @@ function App() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
