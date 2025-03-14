@@ -10,6 +10,7 @@ import Footer from './Components/Footer'
 
 
 import getsukaSetup from './assets/getsuka-setup.jpg'
+import GetsukaEat  from './assets/getsuka-eat.png'
 import getsukaStar from './assets/getsuka-star.png'
 import getsukaHappy from './assets/getsuka-happy.png'
 
@@ -56,6 +57,10 @@ function App() {
           <a href='https://docs.google.com/spreadsheets/d/1sOmeablnN8j1IdqmpXhtWDvST33AsAzPbziVyU6fGj4/edit?usp=drivesdk' target='_blank'>
             <img src={getsukaHappy} alt="更多資訊" />
             <p>玥華小檔案</p>
+          </a>
+          <a href='https://p.ecpay.com.tw/5AB9B96' target='_blank'>
+            <img src={GetsukaEat} alt='綠界' />
+            <p>綠界</p>
           </a>
           <a href='https://gestuka.fandom.com/' target='_blank'>
             <img src={getsukaStar} alt="Wiki" />
