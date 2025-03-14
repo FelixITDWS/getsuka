@@ -1,18 +1,26 @@
 .media-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
     ul {
         list-style: none;
-        padding: 0;
+        padding: 2rem;
         display: flex;
         justify-content: center;
+
+        align-items: center;
         gap: 4rem;
-        margin-top: 2rem;;
+        height: 80px;
+        max-width: 80vw;
+        background-color: white;
+        border-radius: 40px;
     }
 
     li {
         display: inline-block;
         text-align: center;
         position: relative;
-        height: 120px;
     }
 
     img {
