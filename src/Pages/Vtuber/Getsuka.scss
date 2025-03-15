@@ -1,0 +1,119 @@
+.profile {
+    z-index: 0;
+    margin-bottom: 5rem;;
+    position: relative;
+    display: block;
+    margin-top: 80px;
+    left: 0;
+    opacity: 1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 12px;
+    max-width: 1400px;
+    position: relative;
+}
+
+.left-title-bg {
+    background-color: #fb5a38;
+    width: 30%;
+    height: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    transform: translate(0, -50%);
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.left-title {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 0.375rem 0;
+    color: white;
+}
+
+.profile-content-bg {
+    background: linear-gradient(90deg, white 40%, rgba(0, 0, 0, 0) 30%);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.profile-content {
+    width: 60%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: white;
+    border-radius: 180px;
+}
+
+.profile-subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    img {
+        width: 3rem;
+        margin-right: 2rem;
+    }
+}
+
+.profile-text {
+    font-size: 1.25rem;
+    width: 70%;
+    padding-left: 0;
+
+    li {
+        margin-bottom: 0.5rem;
+        list-style: none;
+    }
+}
+
+.mail {
+    font-size: 18px;
+
+    a:hover {
+        opacity: 0.7;
+    }
+}
+
+.profile-tags {
+    font-size: 1rem;
+    width: 20%;
+    color: black;
+    li {
+        list-style: none;
+        z-index: 10;
+        padding: 0 0.5rem;
+        width: 100%;
+        margin-left: -10rem;
+        text-align: center;
+        position: relative;
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &::before {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #fb5a38;
+            transform: skew(-30deg);
+            box-sizing: border-box;
+        }
+
+        span {
+            font-weight: 500;
+        }
+    }
+}

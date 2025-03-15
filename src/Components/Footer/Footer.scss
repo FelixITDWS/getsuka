@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0c180;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer span:hover {
+    transition: all 0.3s;
+    opacity: 0.5;
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      z-index: -1;
+      -webkit-text-stroke: 3px #fff;
+      transition: all 0.3s;
+    }
+}

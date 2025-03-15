@@ -1,0 +1,11 @@
+.character-container {
+    background-image: url('/src/assets/Staff.png'); /* 假設背景圖片 */
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    clear: both;
+}
+  
