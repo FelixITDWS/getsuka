@@ -6,7 +6,7 @@ import discord from '../../assets/discord.svg'
 import twitch from '../../assets/twitch.svg'
 import instagram from '../../assets/instagram.svg'
 import bluesky from '../../assets/bluesky.svg'
-import marshmallow from '../../assets/marshmallow.svg'
+import marshmallow from '../../assets/marshmallow.png'
 
 function Media() {
     return(
