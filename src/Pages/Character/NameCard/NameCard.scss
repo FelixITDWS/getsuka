@@ -8,6 +8,28 @@
     overflow: hidden;
     background: white;
     border-radius: 8px;
+
+    a {
+        position: relative;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        display: block;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0);
+            transition: background-color 0.3s ease;
+        }
+    
+        &:hover::after {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
 }
 
 .card-header {
@@ -30,28 +52,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
-}
-
-a {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    display: block;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0);
-        transition: background-color 0.3s ease;
-    }
-
-    &:hover::after {
-        background: rgba(255, 255, 255, 0.2);
-    }
 }
 
 .character-img {

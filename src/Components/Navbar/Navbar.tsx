@@ -1,11 +1,9 @@
-import "./Navbar.scss";
-
 import NavbarLink from "./NavbarLink"
 import { useRef } from "react";
 
 import getsukaLogo from "../../assets/getsuka-logo.png";
-// import hambar from '../../assets/hambar.svg'
-// import hambarFocus from '../../assets/hambar-focus.svg'
+
+import "./Navbar.scss";
 
 function Navbar() {
     const navBarLinks = useRef<HTMLDivElement>(null);

@@ -1,8 +1,5 @@
 import './App.css'
 
-// import { useState, useEffect, useContext} from "react";
-import { useEffect } from 'react';
-// import DataContext from "./stores/Context"
 import Navbar from './Components/Navbar';
 import Title from './Components/Title';
 import Vtuber from './Pages/Vtuber';
@@ -18,54 +15,6 @@ import getsukaStar from './assets/getsuka-star.png'
 import getsukaHappy from './assets/getsuka-happy.png'
 
 function App() {
-  // const { appSize, setAppSize } = useContext(DataContext);
-
-  const cacheImages = async (srcArray: string[]): Promise<void> => {
-    const promises = srcArray.map((src) => {
-      return new Promise<void>((resolve, reject) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = () => resolve();
-        img.onerror = () => reject();
-      });
-    });
-    await Promise.all(promises);
-  };
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 768) {
-  //       setAppSize("Mobile");
-  //       console.log(appSize);
-  //     } else if (window.innerWidth < 992) {
-  //       setAppSize("Tablet");
-  //       console.log(appSize);
-  //     } else {
-  //       setAppSize("Desktop");
-  //       console.log(appSize);
-  //     }
-  //   }
-  //   handleResize();
-  //   window.addEventListener('resize', handleResize);
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   }
-  // }, [appSize, setAppSize]);
-
-  useEffect(() => {
-    const images = [getsukaSetup, GetsukaEat, getsukaStar, getsukaHappy];
-
-    cacheImages(images);
-
-    setTimeout(async () => {
-    }, 3000);
-
-    // Scroll to top when refresh and loading
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    }
-  }, []);
-
   return(
     <div>
       <div className='navbar-container'>
