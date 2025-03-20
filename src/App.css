@@ -52,7 +52,7 @@ body {
 
 .more-info-container img {
     width: 100%;
-    max-width: 200px;
+    /* max-width: 200px; */
     height: auto;
 }
 
