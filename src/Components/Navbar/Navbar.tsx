@@ -13,6 +13,10 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className="navbar">
             <div className="logo-container">
@@ -30,13 +34,13 @@ function Navbar() {
 
             <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
                 <div ref={navBarLinks} className="nav-links-container">
-                    <div className="nav-item">
+                    <div className="nav-item" onClick={handleLinkClick}>
                         <NavbarLink text="介紹" link="#intro" />
                     </div>
-                    <div className="nav-item">
+                    <div className="nav-item" onClick={handleLinkClick}>
                         <NavbarLink text="相關人物" link="#member" />
                     </div>
-                    <div className="nav-item">
+                    <div className="nav-item" onClick={handleLinkClick}>
                         <NavbarLink text="更多資訊" link="#more-info" />
                     </div>
                 </div>
