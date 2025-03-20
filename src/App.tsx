@@ -17,7 +17,7 @@ import getsukaStar from './assets/getsuka-star.png'
 import getsukaHappy from './assets/getsuka-happy.png'
 
 function App() {
-  const { appSize, setAppSize } = useContext(DataContext);
+  // const { appSize, setAppSize } = useContext(DataContext);
 
   const cacheImages = async (srcArray: string[]): Promise<void> => {
     const promises = srcArray.map((src) => {
