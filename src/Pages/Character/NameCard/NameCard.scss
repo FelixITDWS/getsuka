@@ -2,11 +2,12 @@
     position: relative;
     width: 100%;
     max-width: 300px;
-    height: 350px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background: white;
+    border-radius: 8px;
 }
 
 .card-header {
@@ -16,7 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: clamp(40px, 5vh, 50px);
+    padding: 0 1rem;
 }
 
 .character-info {
@@ -24,22 +26,60 @@
     text-align: center;
     font-size: clamp(0.875rem, 2vw, 1rem);
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+a {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    display: block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0);
+        transition: background-color 0.3s ease;
+    }
+
+    &:hover::after {
+        background: rgba(255, 255, 255, 0.2);
+    }
 }
 
 .character-img {
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        height: 300px;
+        max-width: 250px;
+    }
+
+    .card-header {
+        height: clamp(35px, 4vh, 45px);
+    }
+
+    .character-info {
+        font-size: clamp(0.75rem, 1.5vw, 0.875rem);
     }
 }
 
 @media screen and (max-width: 480px) {
     .card {
-        height: 250px;
+        max-width: 200px;
+    }
+
+    .card-header {
+        height: 35px;
     }
 }
