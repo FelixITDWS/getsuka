@@ -18,6 +18,10 @@
     right: 0;
     transform: translate(0, -50%);
     border-radius: 1.5rem 0 0 1.5rem;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .right-title {
@@ -27,8 +31,16 @@
     right: 0;
     transform: translate(0, -50%);
     padding: 0.375rem 0;
-    margin-right: 0.75rem;
     color: white;
+
+    @media (max-width: 1024px) {
+        background: #fb5a38;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        border-radius: 1.5rem;
+        padding: 8px 12px;
+    }
 }
 
 .container {
@@ -40,6 +52,10 @@
 
 .fan-content-bg {
     background: linear-gradient(-90deg, white 40%, rgba(0, 0, 0, 0) 10%);
+
+    @media (max-width: 1024px) {
+        background: white;
+    }
 }
 
 .fan-content {
@@ -51,6 +67,14 @@
     border-radius: 200px;
     display: flex;
     padding: 3rem 0;
+
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
 
 .fan-subtitle {
@@ -71,6 +95,14 @@
     a {
         text-orientation: upright;
     }
+
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+        writing-mode: horizontal-tb;
+        span {
+            padding: 0;
+        }
+    }
 }
 
 .fan-designer:hover {
@@ -90,5 +122,10 @@
 
     &:hover {
         box-shadow: 5px 5px 10px 3px rgba(251, 90, 56, 0.5);
+    }
+
+    @media (max-width: 768px) {
+        max-width: fit-content;
+        width: 100%;
     }
 }
