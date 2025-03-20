@@ -1,18 +1,26 @@
-<svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.5" filter="url(#filter0_d_1331_137)">
-<rect y="0.366089" width="25.1748" height="4.44261" rx="1" fill="white"/>
-<rect y="7.77043" width="25.1748" height="4.44261" rx="1" fill="white"/>
-<rect y="15.1748" width="25.1748" height="4.44261" rx="1" fill="white"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
 <defs>
-<filter id="filter0_d_1331_137" x="0" y="0.366089" width="27.1748" height="20.2513" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="2" dy="1"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1331_137"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1331_137" result="shape"/>
-</filter>
 </defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 540 540)" id="30741254-d811-47e1-9e08-d279e9df5fa6"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="c1dafe3b-fd28-4eb3-bd83-963ec387e174"  >
+</g>
+<g transform="matrix(38.41 0 0 38.41 540 540)"  >
+<g style="" vector-effect="non-scaling-stroke"   >
+		<g transform="matrix(1 0 0 1 0 -7.4)"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(251,90,56); fill-opacity: 0.59; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-12.5874" y="-2.221305" rx="1" ry="1" width="25.1748" height="4.44261" />
+</g>
+		<g transform="matrix(1 0 0 1 0 0)"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(251,90,56); fill-opacity: 0.59; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-12.5874" y="-2.221305" rx="1" ry="1" width="25.1748" height="4.44261" />
+</g>
+		<g transform="matrix(1 0 0 1 0 7.4)"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(251,90,56); fill-opacity: 0.59; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-12.5874" y="-2.221305" rx="1" ry="1" width="25.1748" height="4.44261" />
+</g>
+</g>
+</g>
 </svg>
