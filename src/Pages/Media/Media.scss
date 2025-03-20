@@ -58,13 +58,20 @@
 @media screen and (max-width: 768px) {
     .media-container {
         ul {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            padding: 1.5rem;
-            gap: 1.5rem;
+            flex-direction: column;
+            height: auto;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 90vw;
+        }
+
+        img {
+            width: 2.5rem;
         }
 
         span {
             display: none;
+            transform: none;
         }
     }
 }
@@ -72,10 +79,12 @@
 @media screen and (max-width: 480px) {
     .media-container {
         ul {
-            grid-template-columns: repeat(3, 1rf);
-            padding: 1rem;
-            gap: 1rem;
-            border-radius: 20px;
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+        
+        img {
+            width: 2rem;
         }
 
         span {
