@@ -1,7 +1,8 @@
 import './App.css'
 
-import { useState, useEffect, useContext} from "react";
-import DataContext from "./stores/Context"
+// import { useState, useEffect, useContext} from "react";
+import { useEffect } from 'react';
+// import DataContext from "./stores/Context"
 import Navbar from './Components/Navbar';
 import Title from './Components/Title';
 import Vtuber from './Pages/Vtuber';
