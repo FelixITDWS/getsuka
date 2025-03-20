@@ -46,7 +46,7 @@ body {
 
 .more-info-container a {
     text-decoration: none;
-    flex: 0 1 300px;
+    flex: 0 1 200px;
     text-align: center;
 
     &:hover {
@@ -56,17 +56,17 @@ body {
 
 .more-info-container img {
     width: 100%;
-    /* max-width: 200px; */
     height: auto;
+    border-radius: 20px 20px 0 0 ;
 }
 
 .more-info-container p {
     text-align: center;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
     color: white;
     background-color: #fb5a38;
     padding: 10px;
-    margin-top: 10px;
+    border-radius: 0 0 20px 20px;
 }
 
 /* Media Queries */
