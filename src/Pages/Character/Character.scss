@@ -1,11 +1,20 @@
 .character-container {
-    background-image: url('/src/assets/Staff.png'); /* 假設背景圖片 */
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    clear: both;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-  
+
+@media screen and (max-width: 768px) {
+    .character-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .character-container {
+        grid-template-columns: 1fr;
+    }
+}

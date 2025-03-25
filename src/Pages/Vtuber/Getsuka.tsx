@@ -1,13 +1,12 @@
 import './Getsuka.scss'
 
-// import getsukaCharacter from '../../assets/getsuka.jpg'
 import getsukaHi from '../../assets/getsuka-hi.png'
 
 function Getsuka() {
     return(
-        <div className='profile'>
-            <div className="left-title-bg">
-            </div>
+    <div className='profile'>
+      <div className="left-title-bg">
+    </div>
     <div className="container">
       <h2 className="left-title">自我介紹</h2>
     </div>
