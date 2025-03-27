@@ -6,6 +6,7 @@ import Vtuber from './Pages/Vtuber';
 import Fan from './Pages/Fan';
 import Character from './Pages/Character';
 import Media from './Pages/Media';
+import YoutubeInfo from './Components/YoutubeInfo';
 import Footer from './Components/Footer'
 
 
@@ -29,6 +30,7 @@ function App() {
             <Title text='介紹' />
           </div>
           <Media />
+          <YoutubeInfo />
           <div>
             <Vtuber />
           </div>
