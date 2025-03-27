@@ -40,6 +40,9 @@ function App() {
           <Fan />
         </div>
       </section>
+      <section id="yt-info">
+        <YTSub />
+      </section>
       <section id="member">
         <div className='member-container'>
           <div>
@@ -68,9 +71,6 @@ function App() {
             <p>Wiki</p>
           </a>
         </div>
-      </section>
-      <section>
-        <YTSub />
       </section>
       <Footer />
     </div>
