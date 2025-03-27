@@ -58,7 +58,8 @@
 @media screen and (max-width: 768px) {
     .media-container {
         ul {
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             height: auto;
             gap: 2rem;
             padding: 2rem;
@@ -79,6 +80,8 @@
 @media screen and (max-width: 480px) {
     .media-container {
         ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             padding: 1.5rem;
         }
