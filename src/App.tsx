@@ -6,6 +6,7 @@ import Vtuber from './Pages/Vtuber';
 import Fan from './Pages/Fan';
 import Character from './Pages/Character';
 import Media from './Pages/Media';
+import YTSub from './Components/YTSub';
 import Footer from './Components/Footer'
 
 
@@ -67,6 +68,9 @@ function App() {
             <p>Wiki</p>
           </a>
         </div>
+      </section>
+      <section>
+        <YTSub />
       </section>
       <Footer />
     </div>
