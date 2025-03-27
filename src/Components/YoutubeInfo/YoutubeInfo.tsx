@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
-import "./YTSub.scss";
+import "./YoutubeInfo.scss";
 
 interface ChannelStats {
   subscriberCount: string;
-  viewCount: string;
-  videoCount: string;
 }
 
 interface ChannelSnippet {
   title: string;
-  description: string;
   thumbnails: {
     default: { url: string };
     medium: { url: string };
@@ -17,11 +14,10 @@ interface ChannelSnippet {
   };
 }
 
-const YTSub: React.FC = () => {
+const YoutubeInfo: React.FC = () => {
   const [subscriberCount, setSubscriberCount] = useState<number | null>(null);
-  // const [viewCount, setViewCount] = useState<number | null>(null);
-  // const [videoCount, setVideoCount] = useState<number | null>(null);
   const [channelTitle, setChannelTitle] = useState<string | null>(null);
+  const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -35,14 +31,16 @@ const YTSub: React.FC = () => {
 
         if (stats?.subscriberCount) {
           setSubscriberCount(parseInt(stats.subscriberCount, 10));
-          // setViewCount(parseInt(stats.viewCount, 10));
-          // setVideoCount(parseInt(stats.videoCount, 10));
         } else {
           setError("找不到訂閱數");
         }
 
         if (snippet?.title) {
           setChannelTitle(snippet.title);
+        }
+
+        if (snippet?.thumbnails?.medium?.url) {
+          setThumbnailUrl(snippet.thumbnails.medium.url);
         }
 
       } catch (err) {
@@ -58,26 +56,24 @@ const YTSub: React.FC = () => {
   }, []);
 
   return (
-    <div className="yt-container">
-      <a href="https://www.youtube.com/@GetsukaCh" target="_blank" rel="noreferrer">
-        <h2 className="title">
-          {channelTitle ? "YouTube 頻道資訊" : "載入中..."}
-        </h2>
-
-        {error && <p className="error">{error}</p>}
-
-        {!error && subscriberCount === null && <p>載入中...</p>}
-
-        {!error && subscriberCount !== null && (
-          <div className="stats">
-            <p className="count">訂閱數：{subscriberCount.toLocaleString()} 人</p>
-            {/* <p>觀看次數：{viewCount?.toLocaleString()}</p> */}
-            {/* <p>影片總數：{videoCount?.toLocaleString()}</p> */}
-          </div>
+    <div className="yt-card-container">
+      <a href="https://www.youtube.com/@GetsukaCh" target="_blank" rel="noreferrer" className="yt-card">
+        {thumbnailUrl && (
+          <img src={thumbnailUrl} alt="頻道頭像" className="yt-avatar" />
+        )}
+        <h3 className="yt-title">
+          {channelTitle ?? "載入中..."}
+        </h3>
+        {error ? (
+          <p className="yt-error">{error}</p>
+        ) : subscriberCount !== null ? (
+          <p className="yt-sub-count">訂閱：{subscriberCount.toLocaleString()} 人</p>
+        ) : (
+          <p className="yt-loading">載入中...</p>
         )}
       </a>
     </div>
   );
 };
 
-export { YTSub };
+export { YoutubeInfo };

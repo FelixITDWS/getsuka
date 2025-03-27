@@ -6,7 +6,7 @@ import Vtuber from './Pages/Vtuber';
 import Fan from './Pages/Fan';
 import Character from './Pages/Character';
 import Media from './Pages/Media';
-import YTSub from './Components/YTSub';
+import YoutubeInfo from './Components/YoutubeInfo';
 import Footer from './Components/Footer'
 
 
@@ -30,6 +30,7 @@ function App() {
             <Title text='介紹' />
           </div>
           <Media />
+          <YoutubeInfo />
           <div>
             <Vtuber />
           </div>
@@ -39,9 +40,6 @@ function App() {
         <div className='fan-container'>
           <Fan />
         </div>
-      </section>
-      <section id="yt-info">
-        <YTSub />
       </section>
       <section id="member">
         <div className='member-container'>
