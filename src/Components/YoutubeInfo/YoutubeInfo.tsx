@@ -14,6 +14,14 @@ interface ChannelSnippet {
   };
 }
 
+const DEUBT_DATE = new Date("2024-03-23");
+
+const calcDaySince = (startDate: Date): number => {
+  const today = new Date();
+  const timeDiff = today.getTime() - startDate.getTime();
+  return Math.floor(timeDiff / (1000 * 3600 * 24));
+}
+
 const YoutubeInfo: React.FC = () => {
   const [subscriberCount, setSubscriberCount] = useState<number | null>(null);
   const [channelTitle, setChannelTitle] = useState<string | null>(null);
@@ -71,6 +79,7 @@ const YoutubeInfo: React.FC = () => {
         ) : (
           <p className="yt-loading">載入中...</p>
         )}
+        <p>出道：{calcDaySince(DEUBT_DATE)} 天</p>
       </a>
     </div>
   );
