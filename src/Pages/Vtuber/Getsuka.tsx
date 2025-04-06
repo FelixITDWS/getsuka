@@ -38,9 +38,9 @@ function Getsuka() {
         <ul className="profile-tags">
           <li>個人勢</li>
           <li><span>粉絲名: </span>魚玥飯</li>
-          <li><span>FanArt: </span>#華畫</li>
-          <li><span>Call: </span>#華到這</li>
-          <li><span>直播: </span>#GetsukaLive</li>
+          <li><span>FanArt: </span><a href='https://x.com/search?q=%23%E8%8F%AF%E7%95%AB&src=typed_query&f=top' target='_blank'>#華畫</a></li>
+          <li><span>Call: </span><a href='https://x.com/search?q=%23%E8%8F%AF%E5%88%B0%E9%80%99&src=typed_query&f=top' target='_blank'>#華到這</a></li>
+          <li><span>直播: </span><a href='https://x.com/search?q=%23GetsukaLive&src=typed_query&f=top' target='_blank'>#GetsukaLive</a></li>
         </ul>
       </div>
     </div>
