@@ -14,7 +14,7 @@ interface ChannelSnippet {
   };
 }
 
-const DEUBT_DATE = new Date("2024-03-23");
+const DEUBT_DATE = new Date("2024-03-21");
 
 const calcDaySince = (startDate: Date): number => {
   const today = new Date();
